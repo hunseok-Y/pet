@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <title>늘봄</title>
   <link rel="icon" href="./logo.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./main.css">
-  <link rel="mo" href="./main.js">
+  <script type="module" src="./main.js"></script>
 
 
 </head>
@@ -79,7 +79,7 @@
 
     <div id="visular">
 
-      <div class="swiper mySwiper inner">
+      <div class="swiper mySwiper visular__inner">
 
         <div class="visular__title">
           <h2 class="title">PET HOT ISSUE</h2>
@@ -92,7 +92,7 @@
 
         <div class="swiper-wrapper visular__wrapper">
 
-          <div class="swiper-slide visular__slide">
+          <!-- <div class="swiper-slide visular__slide">
 
             <div class="slide__main">
 
@@ -104,7 +104,7 @@
               <div class="main__text-arear">
                 <div class="text">
                   <p>#CHAPTER 19</p>
-                  <p>강형욱의 100초 레시피 기다려!</p>
+                  <p>#강형욱의 100초 레시피 기다려!</p>
                 </div>
 
                 <div class="tit">
@@ -169,8 +169,8 @@
 
               <div class="main__text-arear">
                 <div class="text">
-                  <p>#CHAPTER 19</p>
-                  <p>강형욱의 100초 레시피 기다려!</p>
+                  <p>#배변훈련</p>
+                  <p>#이 영상 하나면 배변훈련 끝</p>
                 </div>
 
                 <div class="tit">
@@ -225,15 +225,38 @@
               </div>
 
             </div>
+          </div> -->
 
 
+          <div class="swiper-slide following__slide">
+
+            <ul class="slide__list">
+
+              <li class="list__item">
+
+                <div class="item__content">
+                  <img class="content__profile" src="./following/icon.jpg" alt="profile">
+                  <div class="content__text-arear">
+                    <div class="name">뽀삐</div>
+                    <p class="time">5시간전</p>
+                    <p class="domicile">서울특별시 강남구 서초동</p>
+                  </div>
+                  <div class="content__info">
+                   <button class="info-menu fas fa-ellipsis-h" type="button"></button> 
+                    <div class="info__discription">
+                      <p class="sns"><a href="#" class="sns-link">채팅</a></p>
+                      <p class="delete"><a href="#" class="delete-link">팔로우 취소</a></p>
+                    </div>
+                  </div>
+                </div>
+                <img class="list__img" src="./following/강아지__1.png" alt="강아지">
+
+              </li>
+
+            </ul>
 
           </div>
 
-
-
-
-          <div class="swiper-slide">Slide 2</div>
         </div>
       </div>
 
