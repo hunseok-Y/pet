@@ -36,3 +36,5 @@ button.addEventListener("blur", () => {
   const dropdown = document.querySelector(".content__discription");
   dropdown.style.display = "";
 });
+
+AOS.init();
