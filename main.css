@@ -86,7 +86,9 @@ img {
 
 .header__logo {
   margin: auto 0;
+  position: relative;
   z-index: 99;
+  display: inline-block;
 }
 
 .header__logo .anchor {
@@ -100,6 +102,7 @@ img {
   width: 100%;
   height: 100%;
   display: flex;
+  flex: 0 0 auto;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -113,6 +116,7 @@ img {
 .header__nav .nav__item {
   text-align: center;
   padding: 0 60px;
+  display: inline;
 }
 
 .nav__item>.anchor {
@@ -401,6 +405,7 @@ img {
   background-color: var(--color-white);
 }
 
+
 .following__item .content .content__discription {
   width: 120px;
   height: 100px;
@@ -411,16 +416,27 @@ img {
   font-size: var(--size-micro);
   font-weight: var(--weight-regule);
   display: none;
-  border: 1px solid red;
+  z-index: 60;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
+
+.following__item .content .content__discription.is-active {
+  display: block;
+}
+
 
 .following__item .content .content__discription .sns {
   margin-bottom: 20px;
   display: block;
+  font-size: var(--size-micro);
+  font-weight: var(--weight-regule);
 }
 
 .following__item .content .content__discription .delete {
   display: block;
+  font-size: var(--size-micro);
+  font-weight: var(--weight-regule);
 }
 
 .following__item-img {
@@ -491,4 +507,37 @@ img {
   font-size: var(--size-medium);
   text-align: center;
   line-height: 24px;
+}
+
+/* max-width 768px */
+@media screen and (max-widht: 768px) {
+  :root {
+    /* COLOR */
+    --color-white: #fff;
+    --color-black: #333;
+    --color-gray: #C9C9C9;
+    --color-lightGray: #FAFAFA;
+    --color-yello: #FFD146;
+    --color-darkBlue: #292E3A;
+    --color-blue: #0043ca;
+
+    /* FONTSIZE */
+    --size-bold: 4rem;
+    --size-medium: 2rem;
+    --size-regular: 1.6rem;
+    --size-small: 1.4rem;
+    --size-micro: 1.2rem;
+
+    /* WEIGHT */
+    --weight-bold: 700;
+    --weight-medium: 500;
+    --weight-regule: 400;
+    --weight-light: 300;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__nav {}
 }
