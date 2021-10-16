@@ -71,6 +71,16 @@ img {
   object-fit: cover;
 }
 
+.icon__hidden {
+  overflow: hidden;
+  display: inline-block;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+}
+
 /* HEDER */
 .header {
   width: 100%;
@@ -161,19 +171,19 @@ img {
 }
 
 /* MAIN VIEW */
-.main-view .inner {
+.message .inner {
   width: 1280px;
   height: 100%;
   position: relative;
 }
 
-.main-view__title {
+.message__title {
   width: 100%;
   font-size: var(--size-medium);
   font-weight: var(--weight-bold);
 }
 
-.main-view--but {
+.message--but {
   width: 70px;
   height: 24px;
   border: none;
@@ -201,7 +211,7 @@ img {
 
 .swiper-pagination-bullet-active::after {
   content: "";
-  width: 44px;
+  width: 40px;
   height: 0;
   background-color: var(--color-black);
   border: 2px solid var(--color-black);
@@ -214,235 +224,175 @@ img {
   width: auto;
 }
 
-.main-view__wrapper {
-  width: 100%;
+.message__swiper {
   margin-top: 140px;
 }
 
-.news {
-  overflow: hidden;
+.chatting {
+  width: 100%;
+  height: 57.68924302788845%;
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.news__text-arear {
-  width: 100%;
+.chatting__left {
   background-color: var(--color-white);
-  border-radius: 0 0 20px 20px;
+  max-width: 34.375%;
+  max-height: 778px;
   padding: 20px 20px;
+  border-radius: 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
-.news__text-arear .tag {
-  display: flex;
-  font-size: var(--size-micro);
-  font-weight: var(--weight-medium);
-  color: var(--color-blue);
-  margin-bottom: 20px;
-  line-height: 21px;
+.chatting__left::-webkit-scrollbar {
+  display: none;
 }
 
-.news__text-arear .tag p {
-  margin-right: 10px;
+.left__search {
+  position: relative;
 }
 
-.news__info {
-  display: flex;
+.left__search .left-input {
+  width: 400px;
+  height: 44px;
+  border-radius: 20px;
 }
 
-.news__info-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.news-info__text {
-  margin: auto 0;
-}
-
-.news-info__text>.name {
+.left__search .left-icon {
   font-size: var(--size-medium);
-  font-weight: var(--weight-bold);
-  line-height: 30px;
-}
-
-.news-info__text>.day {
-  font-size: var(--size-small);
-  font-weight: var(--weight-regule);
-  color: var(--color-gray);
-  margin-top: 10px;
-  line-height: 24px;
-}
-
-.news__list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.news__item {
-  width: 630px;
-  height: 240px;
-  background-color: var(--color-white);
-  border-radius: 20px;
-  display: flex;
-}
-
-.news__item .anchor {
-  display: flex;
-  padding: 20px;
-}
-
-.news__item-img {
-  width: 310px;
-  height: 100%;
-  object-fit: cover;
-  text-align: center;
-  overflow: hidden;
-  margin-right: 20px;
-}
-
-.news__item__text-arear .tit {
-  font-size: var(--size-regular);
-  font-weight: var(--weight-medium);
-  margin-bottom: 20px;
-}
-
-.news__item__text-arear .name {
-  font-size: var(--size-small);
-  font-weight: var(--weight-medium);
-  margin-bottom: 20px;
-}
-
-.news__item__text-arear .icon {
-  font-size: var(--size-bold);
-  color: red;
-}
-
-.icon__hidden {
-  overflow: hidden;
-  display: inline-block;
-  border: 0;
-  width: 1px;
-  height: 1px;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-}
-
-.following {
-  overflow: hidden;
-}
-
-.following__list {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.following__item {
-  width: 415px;
-  height: 470px;
-  background-color: var(--color-white);
-  position: relative;
-  border-radius: 20px;
-  margin: 20px 0;
-}
-
-.following__item .content {
-  display: flex;
-  padding: 20px 0;
-}
-
-.following__item .content .content__logo {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: 10px;
-  object-fit: contain;
-}
-
-.following__item .content .content__text-arear {
-  margin: auto 0;
-  position: relative;
-  width: 50%;
-}
-
-.following__item .content .content__name {
-  font-size: var(--size-regular);
-  font-weight: var(--weight-medium);
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.following__item .content .content__time {
-  font-size: var(--size-micro);
-  font-weight: var(--weight-light);
-  display: inline-block;
-}
-
-.following__item .content .content__domicile {
-  font-size: var(--size-micro);
-  font-weight: var(--weight-light);
-  display: block;
-  margin-top: 10px;
-}
-
-.following__item .content .content__info {
   position: absolute;
-  top: 40px;
+  top: 12px;
   right: 20px;
 }
 
-.following__item .content .content__info-icon {
-  font-size: var(--size-small);
-  cursor: pointer;
-  position: relative;
-  border: none;
-  background-color: var(--color-white);
-}
-
-
-.following__item .content .content__discription {
-  width: 120px;
-  height: 100px;
-  padding: 16px;
-  position: absolute;
-  right: 0px;
-  background-color: var(--color-white);
-  font-size: var(--size-micro);
-  font-weight: var(--weight-regule);
-  display: none;
-  z-index: 60;
+.left__container {
+  margin-top: 20px;
+  display: flex;
+  padding: 20px 20px;
+  background-color: var(--color-lightGray);
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  align-items: center;
 }
 
-.following__item .content .content__discription.is-active {
-  display: block;
-}
-
-
-.following__item .content .content__discription .sns {
-  margin-bottom: 20px;
-  display: block;
-  font-size: var(--size-micro);
-  font-weight: var(--weight-regule);
-}
-
-.following__item .content .content__discription .delete {
-  display: block;
-  font-size: var(--size-micro);
-  font-weight: var(--weight-regule);
-}
-
-.following__item-img {
-  width: 100%;
-  height: 370px;
+.left__container .profile {
+  width: 60px;
+  height: 60px;
   object-fit: cover;
   text-align: center;
-  border-radius: 0 0 20px 20px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
+
+.left__container .text-arear {
+  position: relative;
+}
+
+.left__container .text-arear .name {
+  font-size: var(--size-medium);
+  font-weight: var(--weight-bold);
+  display: block;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.left__container .text-arear .talk {
+  display: block;
+  font-size: var(--size-micro);
+  font-weight: var(--weight-light);
+  color: var(--color-gray);
+  line-height: 15px;
+}
+
+.left__container .text-arear .time {
+  position: absolute;
+  top: 14px;
+  right: -120px;
+  font-size: var(--size-micro);
+  font-weight: var(--weight-light);
+  color: var(--color-gray);
+}
+
+.chatting__right {
+  width: 62.5%;
+  max-height: 778px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: var(--color-white);
+  border-radius: 20px;
+}
+
+.chatting__right::-webkit-scrollbar {
+  display: none;
+}
+
+.right__profil {
+  text-align: center;
+  width: 100%;
+  background-color: var(--color-darkBlue);
+  padding: 20px 0;
+}
+
+.right__profil .right-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  text-align: center;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.right__profil .right__title .name {
+  font-size: var(--size-medium);
+  font-weight: var(--weight-medium);
+  line-height: 30px;
+  color: var(--color-white);
+  margin: 20px 0;
+}
+
+.right__profil .right__title .time {
+  font-size: var(--size-micro);
+  font-weight: var(--weight-light);
+  line-height: 18px;
+  color: var(--color-white);
+}
+
+.right__chatroom {
+  margin-top: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.right__chatroom .user {
+  padding: 20px;
+  margin-bottom: 70px;
+  background-color: var(--color-lightGray);
+  display: inline-block;
+  clear: both;
+  float: left;
+}
+
+.right__chatroom .user .text {
+  font-size: var(--size-medium);
+}
+
+.right__chatroom .my-text {
+  padding: 20px;
+  margin-bottom: 70px;
+  text-align: right;
+}
+
+
 
 /* FOOTER */
 .footer {

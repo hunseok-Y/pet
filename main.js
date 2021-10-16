@@ -1,4 +1,3 @@
-"use strict";
 import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
 
 const bullet = ["지식공간", "팔로잉"];
