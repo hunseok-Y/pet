@@ -26,17 +26,6 @@ const swiper = new Swiper(".main-view__swiper", {
   },
 });
 
-// const button = document.querySelector(".content__info-icon");
-
-// button.addEventListener("click", () => {
-//   const dropdown = document.querySelector(".content__discription");
-//   dropdown.style.display = "block";
-// });
-
-// button.addEventListener("blur", () => {
-//   const dropdown = document.querySelector(".content__discription");
-//   dropdown.style.display = "";
-// });
 const buttons = document.querySelectorAll(".content__info-icon");
 
 for (var i = 0; i < buttons.length; i++) {
