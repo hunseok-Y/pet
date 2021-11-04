@@ -263,7 +263,7 @@
   border-radius: 0 0 20px 20px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 375px) and (max-width: 1024px) {
   .main-view {
     margin-bottom: 4rem;
   }
@@ -277,11 +277,6 @@
     margin-top: 10rem;
   }
 
-
-  .main-view .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
-  .main-view .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-    margin: 0;
-  }
 
   .news__text-arear {
     width: 100%;

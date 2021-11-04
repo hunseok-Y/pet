@@ -1,12 +1,5 @@
 @import url(./common.css);
 
-/* message */
-.message .inner {
-  width: 1280px;
-  height: 100%;
-  position: relative;
-}
-
 .message__title {
   width: 100%;
   font-size: var(--size-medium);
@@ -38,8 +31,8 @@
 
 .chatting__left {
   background-color: var(--color-white);
-  max-width: 34.375%;
-  max-height: 778px;
+  width: 34.375%;
+  height: 778px;
   padding: 20px 20px;
   border-radius: 20px;
   overflow-x: hidden;
@@ -60,7 +53,7 @@
 }
 
 .left__search .left-input {
-  width: 400px;
+  width: 100%;
   height: 44px;
   border-radius: 20px;
 }
@@ -68,52 +61,48 @@
 .left__search .left-icon {
   font-size: var(--size-medium);
   position: absolute;
-  top: 12px;
-  right: 20px;
+  top: 14px;
+  right: 10px;
 }
 
-.left__container {
+.left__container .item {
+  width: 100%;
   margin-top: 20px;
-  display: flex;
-  padding: 20px 20px;
+  padding: 20px;
   background-color: var(--color-lightGray);
   border-radius: 20px;
   align-items: center;
+  display: flex;
+  position: relative;
 }
 
-.left__container .profile {
+.left__container .item .profile {
   width: 60px;
   height: 60px;
   object-fit: cover;
   text-align: center;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
-.left__container .text-arear {
-  position: relative;
-}
-
-.left__container .text-arear .name {
+.left__container .item .text-arear .name {
   font-size: var(--size-medium);
   font-weight: var(--weight-bold);
   display: block;
-  margin-bottom: 10px;
   line-height: 24px;
+  margin-bottom: 10px;
 }
 
-.left__container .text-arear .talk {
-  display: block;
+.left__container .item .text-arear .talk {
   font-size: var(--size-micro);
   font-weight: var(--weight-light);
   color: var(--color-gray);
   line-height: 15px;
 }
 
-.left__container .text-arear .time {
+.left__container .item .time {
   position: absolute;
-  top: 14px;
-  right: -120px;
+  right: 20px;
   font-size: var(--size-micro);
   font-weight: var(--weight-light);
   color: var(--color-gray);
@@ -122,7 +111,7 @@
 /* right */
 .chatting__right {
   width: 62.5%;
-  max-height: 778px;
+  height: 778px;
   overflow-x: hidden;
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -215,7 +204,6 @@
   position: absolute;
   bottom: 0;
   padding: 20px;
-  text-align: right;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -232,15 +220,15 @@
 
 .text-box__send-input {
   width: 100%;
-  height: 48px;
+  height: 4rem;
   border-radius: 20px;
   font-size: var(--size-regular);
   font-weight: var(--weight-medium);
 }
 
 .text-box__send__icon {
-  width: 36px;
-  height: 36px;
+  width: 30px;
+  height: 30px;
   position: absolute;
   top: 6px;
   right: 4px;
@@ -248,9 +236,15 @@
   font-size: var(--size-medium);
   color: var(--color-white);
   text-align: center;
-  line-height: 36px;
+  line-height: 30px;
   border-radius: 50%;
-  margin: auto 0;
+}
+
+/* recommend */
+.recommend {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .recommend__search {
@@ -318,8 +312,8 @@
   display: block;
   font-size: var(--size-regular);
   font-weight: var(--weight-medium);
-  line-height: 30px;
-  margin-bottom: 20px;
+  line-height: 3rem;
+  margin-bottom: 2rem;
 }
 
 .bookmark__text-arear .text {
@@ -382,4 +376,138 @@
   justify-content: space-between;
   align-items: center;
   font-size: var(--size-regular);
+}
+
+@media screen and (max-width: 1024px) {
+  .message__title {
+    padding: 20px 0;
+  }
+
+
+  .right__text-box .text-box__icon {
+    font-size: var(--size-bold);
+  }
+
+  .recommend__search-input {
+    width: 100%;
+    height: 6rem;
+  }
+
+  .recommend__search-icon {
+    right: 20px;
+  }
+
+  .bookmark {
+    width: 21rem
+  }
+
+  .hospital__list {
+    width: 21rem
+  }
+
+
+
+}
+
+@media screen and (max-width: 376px) {
+  .message__swiper {
+    margin-top: 10rem;
+  }
+
+  .chatting {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .chatting__left {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 9rem;
+  }
+
+  .chatting__right {
+    display: none;
+  }
+
+  .bookmark {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+  }
+
+  .bookmark__face,
+  .hospital__face {
+    width: 5rem;
+    height: 5rem;
+    display: inline;
+    margin-right: 1rem;
+  }
+
+  .bookmark__text-arear,
+  .hospital__text-arear {
+    margin: auto 0;
+    text-align: left;
+  }
+
+  .bookmark__text-arear .name,
+  .hospital__text-arear .name {
+    margin-bottom: .4rem;
+    line-height: 2rem;
+    margin: auto 0;
+
+  }
+
+  .bookmark__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto 0;
+  }
+
+  .bookmark__icon .call,
+  .bookmark__icon .message {
+    display: none;
+  }
+
+  .bookmark__icon .info,
+  .hospital__icon .info {
+    font-size: var(--size-medium);
+  }
+
+  .hospital {
+    display: block;
+    position: relative;
+    margin-bottom: 7rem;
+  }
+
+  .hospital__list {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .hospital__icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 20px;
+    margin: auto 0;
+  }
+
+  .hospital__icon .call,
+  .hospital__icon .message {
+    display: none;
+  }
+
 }

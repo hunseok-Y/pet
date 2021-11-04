@@ -8,6 +8,7 @@
   --color-darkBlue: #292E3A;
   --color-blue: #0043ca;
   --color-red: #FF2A2A;
+  --color-darkGreen: #087f23;
 
   /* FONTSIZE */
   --size-bold: 4rem;
@@ -26,7 +27,7 @@
 }
 
 /* max-width 768px */
-@media screen and (max-width: 1024px) {
+@media (min-width: 314px) and (max-width: 1024px) {
   :root {
     /* COLOR */
     --color-white: #fff;
@@ -36,6 +37,7 @@
     --color-yello: #FFD146;
     --color-darkBlue: #292E3A;
     --color-blue: #0043ca;
+    --color-darkGreen: #087f23;
 
     /* FONTSIZE */
     --size-bold: 2rem;

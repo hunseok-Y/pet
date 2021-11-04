@@ -65,7 +65,7 @@
 
 .chart__top {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
@@ -160,7 +160,7 @@
   display: flex;
   width: 100%;
   height: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
 }
@@ -312,13 +312,9 @@
   line-height: 24px;
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 375px) and (max-width: 1024px) {
   .records {
     margin-bottom: 7rem;
-  }
-
-  .records .inner {
-    width: 335px;
   }
 
   .records__title {
