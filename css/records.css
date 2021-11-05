@@ -19,7 +19,7 @@
 /* calendar */
 .calendar__list {
   background-color: var(--color-white);
-  width: 111px;
+  width: 111px !important;
   height: 180px;
   border-radius: 60px;
   text-align: center;
@@ -210,6 +210,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .container__list .item {
@@ -312,8 +313,9 @@
   line-height: 24px;
 }
 
-@media (min-width: 375px) and (max-width: 1024px) {
+@media (min-width: 359px) and (max-width: 1024px) {
   .records {
+    width: 100%;
     margin-bottom: 7rem;
   }
 
@@ -330,7 +332,8 @@
   .calendar__list {
     width: 100%;
     height: 100%;
-    padding: 1rem 1.5rem;
+    height: 18rem;
+    padding: 4rem 1.5rem;
     margin-right: 1rem;
   }
 

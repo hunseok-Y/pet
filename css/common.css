@@ -231,6 +231,23 @@ img {
 }
 
 /* swiper */
+.swiper-slide-active .week,
+.swiper-slide-active .day {
+  color: black !important;
+}
+
+.swiper-slide-active .week::before {
+  content: "";
+  width: 80px;
+  height: 0;
+  border: 1px solid var(--color-black) !important;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 .swiper-pagination-bullet {
   width: 70px;
   height: 0;
@@ -244,6 +261,7 @@ img {
 
 .swiper-pagination-bullet-active {
   transition: all .2s;
+  text-align: left;
 }
 
 .swiper-pagination-bullet-active::after {

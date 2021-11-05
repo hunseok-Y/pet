@@ -12,4 +12,14 @@ new Chartist.Pie(
   }
 );
 
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 10,
+  spaceBetween: 20,
+  centeredSlides: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+
 AOS.init();

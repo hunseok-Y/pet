@@ -38,7 +38,6 @@
   background-position: 24% 60%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  object-fit: cover;
 }
 
 
@@ -213,7 +212,7 @@
   }
 }
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 750px) {
   .information__title {
     display: none;
   }
