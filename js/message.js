@@ -25,3 +25,5 @@ const swiper = new Swiper(".message__swiper", {
     nextEl: ".hospital-btn",
   },
 });
+
+AOS.init();

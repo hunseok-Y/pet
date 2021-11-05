@@ -11,3 +11,5 @@ new Chartist.Pie(
     showLabel: true,
   }
 );
+
+AOS.init();
