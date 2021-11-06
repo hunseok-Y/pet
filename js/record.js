@@ -13,7 +13,7 @@ new Chartist.Pie(
 );
 
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 10,
+  slidesPerView: 4,
   spaceBetween: 20,
   centeredSlides: false,
   pagination: {
