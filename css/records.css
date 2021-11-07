@@ -11,19 +11,20 @@
 .records__calendar {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;
+  justify-content: space-between; */
   margin-bottom: 70px;
 }
 
 /* calendar */
 .calendar__list {
   background-color: var(--color-white);
-  width: 111px !important;
+  width: 111px;
   height: 180px;
   border-radius: 60px;
   text-align: center;
   padding: 40px 0;
+  box-sizing: border-box;
 }
 
 .calendar__list .week {
@@ -330,11 +331,11 @@
   }
 
   .calendar__list {
-    width: 100%;
+    /*width: 100%;*/
     height: 100%;
     height: 18rem;
     padding: 4rem 1.5rem;
-    margin-right: 1rem;
+    /*margin-right: 1rem;*/
   }
 
   .calendar__list .week::before {
