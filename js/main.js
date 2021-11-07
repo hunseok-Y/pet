@@ -24,6 +24,13 @@ const swiper = new Swiper(".main-view__swiper", {
     prevEl: ".news-btn",
     nextEl: ".following-btn",
   },
+  on: {
+    init: function () {
+      const swiper = this;
+      const pagination = swiper.pagination.el;
+      pagination.style.display = "block";
+    },
+  },
 });
 
 const buttons = document.querySelectorAll(".content__info-icon");

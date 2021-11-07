@@ -12,6 +12,7 @@
   font-weight: var(--weight-bold);
 }
 
+
 .main-view--but {
   width: 70px;
   height: 24px;
@@ -22,6 +23,19 @@
   text-align: left;
   display: flex;
 }
+
+.main-view--but .swiper-pagination-bullet {
+  width: auto;
+}
+
+.main-view--but .swiper-pagination-bullet+.swiper-pagination-bullet {
+  margin-left: 20px;
+}
+
+.main-view--but .swiper-pagination-bullet:after {
+  width: 100%;
+}
+
 
 .main-view__wrapper {
   width: 100%;
