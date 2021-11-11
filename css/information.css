@@ -109,7 +109,7 @@
   height: 10rem;
   resize: none;
   margin-top: 10px;
-  border-width: 0 0 2px 0;
+  border-width: 2px;
   background-color: var(--color-yello);
 }
 

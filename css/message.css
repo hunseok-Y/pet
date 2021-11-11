@@ -21,6 +21,18 @@
   margin-top: 140px;
 }
 
+.message--but .swiper-pagination-bullet {
+  width: auto;
+}
+
+.message--but .swiper-pagination-bullet+.swiper-pagination-bullet {
+  margin-left: 20px;
+}
+
+.message--but .swiper-pagination-bullet:after {
+  width: 100%;
+}
+
 /* chatting */
 .chatting {
   width: 100%;
