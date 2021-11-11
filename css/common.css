@@ -266,7 +266,7 @@ img {
 
 .swiper-pagination-bullet-active::after {
   content: "";
-  width: 44px;
+  width: 100%;
   height: 0;
   background-color: var(--color-black);
   border: 2px solid var(--color-black);

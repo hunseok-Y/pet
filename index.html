@@ -13,9 +13,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -113,7 +113,7 @@
 
 
               <div class="news__list">
-                <div class="news__item wow animate__animated animate__heartBeat" data-wow-offset="50" data-wow-duration="800">
+                <div class="news__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="800">
                   <a href="#" class="anchor">
                     <img class="news__item-img" src="./image/main/list/푸블 1편.jpg" alt="푸들편">
                     <div class="news__item__text-arear">
@@ -125,8 +125,7 @@
                   </a>
                 </div>
 
-                <div class="news__item" data-aos="fade-left" data-aos-offset="50" data-aos-easing="ease-in-out-sine"
-                  data-aos-duration="800">
+                <div class="news__item" data-aos="fade-left" data-aos-offset="50" data-aos-duration="800">
                   <a href="#" class="anchor">
                     <img class="news__item-img" src="./image/main/list/푸블 2편.jpg" alt="푸들편">
                     <div class="news__item__text-arear">
@@ -171,8 +170,7 @@
 
               <div class="news__list">
 
-                <div class="news__item" data-aos="fade-right" data-aos-offset="50" data-aos-easing="ease-in-out-sine"
-                  data-aos-duration="800">
+                <div class="news__item" data-aos="fade-right" data-aos-offset="50" data-aos-duration="800">
                   <a href="#" class="anchor">
                     <img class="news__item-img" src="./image/main/list/강아지 산책 준비물.jpg" alt="강아지 산책 준비물">
                     <div class="news__item__text-arear">
@@ -638,9 +636,10 @@
   </div>
 
   <div class="loding">
-    
+
   </div>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script type="module" src="./js/main.js"></script>
 </body>

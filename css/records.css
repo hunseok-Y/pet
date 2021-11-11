@@ -107,51 +107,104 @@
 }
 
 
-.records-chart {
-  width: 313px;
-  height: 313px;
+/* circle */
+.svg-item {
+  width: 100%;
+  font-size: 16px;
+  margin: 0 auto;
+  animation: donutfade 1s;
+}
+
+.donut-ring {
+  stroke: #EBEBEB;
+}
+
+.donut-segment {
+  transform-origin: center;
+  stroke: #FF6200;
+}
+
+.donut-segment-2 {
+  stroke: #FFD146;
+  animation: donut1 4s;
+}
+
+.segment-1 {
+  fill: #ccc;
+}
+
+@keyframes donutfade {
+
+  /* this applies to the whole svg item wrapper */
+  0% {
+    opacity: .2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes donutfadelong {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes donut1 {
+  0% {
+    stroke-dasharray: 0, 100;
+  }
+
+  100% {
+    stroke-dasharray: 40, 60;
+  }
+}
+
+.donut-percent {
+  animation: donutfadelong 1s;
+}
+
+.donut-data {
+  font-size: 0.12em;
+  line-height: 1;
+  transform: translateY(0.5em);
   text-align: center;
-  margin: auto 0;
-  position: relative;
+  text-anchor: middle;
+  color: #666;
+  fill: #666;
+  animation: donutfadelong 1s;
 }
 
-.records-chart .number {
-  font-size: var(--size-sameBold);
-  font-weight: var(--weight-medium);
-  color: var(--color-white);
-  position: absolute;
-  top: 120px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto 0;
+.donut-text {
+  font-family: 'Noto Sans KR', sans-serif;
+  fill: #FF6200;
+}
+
+.donut-text-1 {
+  fill: black;
+}
+
+.donut-label {
+  font-size: 0.28em;
+  font-weight: 700;
+  line-height: 1;
+  fill: #000;
+  transform: translateY(0.25em);
+}
+
+.donut-percent {
+  font-size: 0.5em;
+  line-height: 1;
+  transform: translateY(0.5em);
+  font-weight: bold;
 }
 
 
-
-.records-chart .text {
-  font-size: var(--size-medium);
-  font-weight: var(--weight-medium);
-  color: var(--color-white);
-  position: absolute;
-  bottom: 120px;
-  left: 0;
-  right: 0;
-  margin: auto 0;
-}
-
-
-.ct-series-a .ct-slice-donut-solid {
-  fill: var(--color-yello);
-}
-
-.ct-series-b .ct-slice-donut-solid {
-  fill: var(--color-gray);
-}
-
-.ct-chart-donut .ct-label {
-  display: none;
-}
 
 .chart__bottom {
   margin-top: 70px;
@@ -379,25 +432,12 @@
     font-weight: var(--weight-regule);
   }
 
-  .records-chart {
-    width: 13rem;
-    height: 13rem;
+  .svg-item {
+    width: 13em;
+    font-size: 1rem;
+    margin: 0 auto;
+    animation: donutfade 1s;
     text-align: center;
-    margin: auto 0;
-    position: relative;
-  }
-
-  .records-chart .number {
-    position: absolute;
-    top: 4rem;
-    font-size: var(--size-bold);
-  }
-
-  .records-chart .text {
-    font-size: var(--size-regular);
-    font-weight: var(--weight-light);
-    position: absolute;
-    top: 14rem;
   }
 
   .chart__bottom {
